@@ -767,7 +767,7 @@ func (e *ItemsRepository) Patch(ctx context.Context, gid, id uuid.UUID, data Ite
 		q.SetQuantity(*data.Quantity)
 	}
 
-	if data.locationId != nil {
+	if data.LocationId != nil {
 		q.SetLocationID(*data.LocationID)
 	}
 
