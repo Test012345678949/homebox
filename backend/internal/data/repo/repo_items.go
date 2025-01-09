@@ -110,7 +110,7 @@ type (
 	ItemPatch struct {
 		ID        uuid.UUID `json:"id"`
 		Quantity  *int      `json:"quantity,omitempty" extensions:"x-nullable,x-omitempty"`
-		LocationID uuid.UUID   `json:"locationId"`
+		LocationID *uuid.UUID   `json:"locationId"`
 		ImportRef *string   `json:"-,omitempty"        extensions:"x-nullable,x-omitempty"`
 	}
 
